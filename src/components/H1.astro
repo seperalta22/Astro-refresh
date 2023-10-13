@@ -1,7 +1,9 @@
 ---
+type Props = {
+  text: string;
+};
 
+const { text } = Astro.props;
 ---
 
-<div></div>
-
-<style></style>
+<h1 class="text-6xl text-teal-900 font-bold mb-16">{text}</h1>
