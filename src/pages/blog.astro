@@ -3,19 +3,14 @@ import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Main from "../components/Main.astro";
 import H1 from "../components/H1.astro";
+import PoistList from "../components/PoistList.astro";
 
-const post = await getCollection("posts");
+const posts = await getCollection("posts");
 ---
 
 <Layout title="Blog | Rythm Nation Blog">
   <Main>
     <H1 text="Rythm Nation" />
-    {
-      post.map((post) => (
-        <a href={`/blog/${post.slug}`}>
-          <h2>{post.data.title}</h2>
-        </a>
-      ))
-    }
+    {posts.map((post) => <PoistList posts={posts} />)}
   </Main>
 </Layout>
