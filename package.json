@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/mdx": "^1.1.2",
     "@astrojs/tailwind": "^5.0.1",
+    "@astrojs/vercel": "^5.0.2",
     "astro": "^3.2.0",
     "date-fns": "^2.30.0",
     "sharp": "^0.32.6",
