@@ -33,6 +33,8 @@ const { Content } = await post.render();
       height={1024 / 1.5}
       class="rounded-2xl shadow-xl mb-4 aspect-thumbnail object-cover"
     />
-    <Content />
+    <div class="prose prose-2xl overflow-visible relative mb-20">
+      <Content />
+    </div>
   </Main>
 </Layout>
